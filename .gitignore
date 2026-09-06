@@ -2,5 +2,9 @@ venv/
 data/raw/
 data/processed/
 *.pkl
+!models/credit_risk_model.pkl
+!models/feature_columns.pkl
+!models/scaler.pkl
+!models/baseline_logistic.pkl
 .ipynb_checkpoints/
 __pycache__/
