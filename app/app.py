@@ -57,7 +57,7 @@ if st.button("Assess Risk"):
         "annual_inc": annual_inc, "dti": dti, "open_acc": open_acc,
         "revol_bal": revol_bal, "revol_util": revol_util, "total_acc": total_acc
     }
-    response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+    response = requests.post("https://credit-risk-api-x3z5.onrender.com/predict", json=payload)
     result = response.json()
     
     st.metric("Default Probability", f"{result['default_probability']*100:.1f}%")
